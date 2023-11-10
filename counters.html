@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+body{
+    counter-reset:s;
+}
+h2::before{
+    counter-increment: s;
+    content: "head " counter(s)": ";
+}
+    </style>
+</head>
+<body>
+    <head><h1>counters</h1></head>
+    <h2>Hello guys</h2>
+    <h2>Hello guys</h2>
+    <h2>Hello guys</h2>
+</body>
+</html>
